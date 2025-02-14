@@ -1,1 +1,5 @@
-# leetcode
+# LeetCode
+
+## Algs
+
+- Binary search
