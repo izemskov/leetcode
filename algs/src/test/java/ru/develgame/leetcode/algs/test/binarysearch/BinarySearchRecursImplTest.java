@@ -1,4 +1,4 @@
-package ru.develgame.leetcode.algs.test;
+package ru.develgame.leetcode.algs.test.binarysearch;
 
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
