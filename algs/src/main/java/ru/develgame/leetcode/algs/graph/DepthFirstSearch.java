@@ -6,7 +6,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 @Getter
-public class DepthSearch {
+public class DepthFirstSearch {
     private List<Integer> visited = new ArrayList<>();
 
     public void deepFirstSearch(Node node) {

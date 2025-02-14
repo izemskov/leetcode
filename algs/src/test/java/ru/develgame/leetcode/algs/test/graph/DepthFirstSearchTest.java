@@ -5,19 +5,19 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.Arguments;
 import org.junit.jupiter.params.provider.MethodSource;
-import ru.develgame.leetcode.algs.graph.DepthSearch;
+import ru.develgame.leetcode.algs.graph.DepthFirstSearch;
 import ru.develgame.leetcode.algs.graph.Node;
 
 import java.util.Arrays;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
-class DepthSearchTest {
-    private DepthSearch depthSearch;
+class DepthFirstSearchTest {
+    private DepthFirstSearch depthFirstSearch;
 
     @BeforeEach
     void setUp() {
-        depthSearch = new DepthSearch();
+        depthFirstSearch = new DepthFirstSearch();
     }
 
     public static Stream<Arguments> sourceTest1() {
@@ -31,9 +31,9 @@ class DepthSearchTest {
     @ParameterizedTest
     @MethodSource("sourceTest1")
     void test1(int[][] graph, int[] expected) {
-        depthSearch.deepFirstSearch(Node.createGraph(graph));
+        depthFirstSearch.deepFirstSearch(Node.createGraph(graph));
         Assertions.assertEquals(Arrays.stream(expected)
                 .boxed()
-                .collect(Collectors.toList()), depthSearch.getVisited());
+                .collect(Collectors.toList()), depthFirstSearch.getVisited());
     }
 }
