@@ -24,7 +24,7 @@
 
     <modules>
         <module>algs</module>
-        <!--<module>problems</module>-->
+        <module>sql</module>
     </modules>
 
     <dependencyManagement>
